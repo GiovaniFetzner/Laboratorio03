@@ -4,7 +4,7 @@ public class Main {
 
         System.out.println("Informe quantos de candidatos");
 
-
+        PartidosPoliticos temporario = PartidosPoliticos.DIREITA;
 
     }
 }

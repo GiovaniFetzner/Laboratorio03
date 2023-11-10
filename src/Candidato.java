@@ -15,6 +15,16 @@ public class Candidato {
         return partidosPoliticos;
     }
 
+    public Candidato() {
+    }
+
+    public Candidato(String nome, PartidosPoliticos partidosPoliticos, int idade, int numeroDeVotos) {
+        this.nome = nome;
+        this.partidosPoliticos = partidosPoliticos;
+        this.idade = idade;
+        this.numeroDeVotos = numeroDeVotos;
+    }
+
     public int getIdade() {
         return idade;
     }

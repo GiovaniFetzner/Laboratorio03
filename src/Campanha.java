@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Campanha {
 
-    private ArrayList candidatos;
+    private ArrayList<Candidato> candidatos;
     Scanner ler = new Scanner(System.in);
     public boolean Cadastro_Candidato(){
 
@@ -15,8 +15,16 @@ public class Campanha {
         return true;
     }
 
-    public Candidato candidatoJovem(ArrayList candidatos){
+    public Candidato candidatoJovem(ArrayList<Candidato> candidatos){
+        Candidato candidatoMaisJovem = new Candidato();
+
+        for (int i = 0; i < candidatos.size(); i++) {
+            if (candidatos.get(i).getIdade() < candidatos.get(i+1).getIdade()){
+
+            }
+        }
         return null;
+
     }
 
     public Candidato candidatoVelho(ArrayList candidatos){
