@@ -1,8 +1,19 @@
 import java.util.ArrayList;
+import java.util.*;
 
 public class Campanha {
 
     private ArrayList candidatos;
+    Scanner ler = new Scanner(System.in);
+    public boolean Cadastro_Candidato(){
+
+            Candidato candidato = new Candidato();
+            System.out.println("");
+
+            candidatos.add(candidato);
+
+        return true;
+    }
 
     public Candidato candidatoJovem(ArrayList candidatos){
         return null;
