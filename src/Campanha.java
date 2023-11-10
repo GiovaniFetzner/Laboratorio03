@@ -37,4 +37,9 @@ public class Campanha {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "Candidatos da campanha: " +
+                candidatos.toString();
+    }
 }

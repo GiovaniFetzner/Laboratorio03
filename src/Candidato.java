@@ -15,10 +15,6 @@ public class Candidato {
         return partidosPoliticos;
     }
 
-    public void setPartidosPoliticos(PartidosPoliticos partidosPoliticos) {
-        this.partidosPoliticos = partidosPoliticos;
-    }
-
     public int getIdade() {
         return idade;
     }
