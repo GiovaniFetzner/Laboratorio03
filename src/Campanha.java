@@ -106,10 +106,17 @@ public class Campanha {
 
     public int totalDeVotos(){
         int soma = 0;
+        for (Candidato candidatos: candidatos) {
+            soma += candidatos.getNumeroDeVotos();
+        }
         return soma;
     }
     public int mediaDeVotosPorCandidato(){
-        return 0;
+        int soma = 0;
+        for (Candidato candidatos: candidatos) {
+            soma += candidatos.getNumeroDeVotos();
+        }
+        return (soma/candidatos.size());
     }
 
     @Override
