@@ -50,8 +50,6 @@ public class Campanha {
         candidato.setIdade(ler_int.nextInt());
         System.out.println("Informe a quantidade de votos recebidos: ");
         candidato.setNumeroDeVotos(ler_int.nextInt());
-
-
         candidatos.add(candidato);
 
         return true;
