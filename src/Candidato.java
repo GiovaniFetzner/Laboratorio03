@@ -44,4 +44,14 @@ public class Candidato {
     public void setNumeroDeVotos(int numeroDeVotos) {
         this.numeroDeVotos = numeroDeVotos;
     }
+
+    @Override
+    public String toString() {
+        return "Candidato{" +
+                "nome='" + nome + '\'' +
+                ", partidosPoliticos=" + partidosPoliticos +
+                ", idade=" + idade +
+                ", numeroDeVotos=" + numeroDeVotos +
+                '}';
+    }
 }

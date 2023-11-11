@@ -4,14 +4,18 @@ import java.util.*;
 public class Campanha {
 
     private ArrayList<Candidato> candidatos;
-    Scanner ler = new Scanner(System.in);
+
+    public Campanha(ArrayList<Candidato> candidatos) {
+        this.candidatos = candidatos;
+    }
+
     public boolean Cadastro_Candidato(){
 
         Scanner ler_string = new Scanner(System.in);
         Scanner ler_int = new Scanner (System.in);
         int escolha = 0;
         PartidosPoliticos temp;
-        boolean Candidato_existe = false;
+        boolean Candidato_existe = true;
 
         Candidato candidato = new Candidato();
         System.out.println("Informe o Nome do Candidato: ");
@@ -23,19 +27,19 @@ public class Campanha {
             switch (escolha) {
                 case 1:
                     candidato.setPartidosPoliticos(PartidosPoliticos.DIREITA);
-                    Candidato_existe = true;
+                    Candidato_existe = false;
                     break;
                 case 2:
                     candidato.setPartidosPoliticos(PartidosPoliticos.ESQUERDA);
-                    Candidato_existe = true;
+                    Candidato_existe = false;
                     break;
                 case 3:
                     candidato.setPartidosPoliticos(PartidosPoliticos.CENTRO);
-                    Candidato_existe = true;
+                    Candidato_existe = false;
                     break;
                 case 4:
                     candidato.setPartidosPoliticos(PartidosPoliticos.LIBERAL);
-                    Candidato_existe = true;
+                    Candidato_existe = false;
                     break;
                 default:
                     System.out.println("Opção invalida. Tente novamente.");
@@ -53,7 +57,7 @@ public class Campanha {
         return true;
     }
 
-    public Candidato candidatoJovem(ArrayList<Candidato> candidatos){
+    public Candidato candidatoJovem(){
         Candidato candidatoMaisJovem = new Candidato();
         candidatoMaisJovem = candidatos.get(0);
 
@@ -65,30 +69,30 @@ public class Campanha {
         return candidatoMaisJovem;
     }
 
-    public Candidato candidatoVelho(ArrayList<Candidato> candidatos){
+    public Candidato candidatoVelho(){
         Candidato candidatoMaisVelho = new Candidato();
         candidatoMaisVelho = candidatos.get(0);
 
         for (Candidato candidato: candidatos) {
-            if(candidato.getIdade() < candidatoMaisVelho.getIdade()){
+            if(candidato.getIdade() > candidatoMaisVelho.getIdade()){
                 candidatoMaisVelho = candidato;
             }
         }
         return candidatoMaisVelho;
     }
 
-    public Candidato candidatoMaisVotado(ArrayList<Candidato> candidatos){
+    public Candidato candidatoMaisVotado(){
         return null;
     }
-    public Candidato candidatoMenosVotado(ArrayList<Candidato> candidatos){
+    public Candidato candidatoMenosVotado(){
         return null;
     }
 
-    public int totalDeVotos(ArrayList<Candidato> candidatos){
+    public int totalDeVotos(){
         int soma = 0;
         return soma;
     }
-    public int mediaDeVotosPorCandidato(ArrayList<Candidato> candidatos){
+    public int mediaDeVotosPorCandidato(){
         return 0;
     }
 
