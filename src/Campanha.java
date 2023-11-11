@@ -82,10 +82,26 @@ public class Campanha {
     }
 
     public Candidato candidatoMaisVotado(){
-        return null;
+        Candidato candidatoMaisVotado = new Candidato();
+        candidatoMaisVotado = candidatos.get(0);
+
+        for (Candidato candidato: candidatos) {
+            if(candidato.getNumeroDeVotos() > candidatoMaisVotado.getNumeroDeVotos()){
+                candidatoMaisVotado = candidato;
+            }
+        }
+        return candidatoMaisVotado;
     }
     public Candidato candidatoMenosVotado(){
-        return null;
+        Candidato candidatoMaisVotado = new Candidato();
+        candidatoMaisVotado = candidatos.get(0);
+
+        for (Candidato candidato: candidatos) {
+            if(candidato.getNumeroDeVotos() < candidatoMaisVotado.getNumeroDeVotos()){
+                candidatoMaisVotado = candidato;
+            }
+        }
+        return candidatoMaisVotado;
     }
 
     public int totalDeVotos(){
