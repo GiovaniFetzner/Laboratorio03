@@ -11,6 +11,10 @@ public class Candidato {
         this.nome = nome;
     }
 
+    public void setPartidosPoliticos(PartidosPoliticos partidosPoliticos) {
+        this.partidosPoliticos = partidosPoliticos;
+    }
+
     public PartidosPoliticos getPartidosPoliticos() {
         return partidosPoliticos;
     }
