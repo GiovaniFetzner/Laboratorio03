@@ -1,14 +1,18 @@
 import java.util.ArrayList;
 import java.util.*;
 
-public class Campanha {
+public class Campanha extends ArrayList{
 
     private ArrayList<Candidato> candidatos;
 
     public Campanha(ArrayList<Candidato> candidatos) {
+
         this.candidatos = candidatos;
     }
 
+    //Método usado para informar o candidato, antes de ser colocado no main
+
+/*
     public boolean Cadastro_Candidato(){
 
         Scanner ler_string = new Scanner(System.in);
@@ -53,6 +57,11 @@ public class Campanha {
         candidatos.add(candidato);
 
         return true;
+    }
+*/
+
+    public void add (Candidato candidato){
+        candidatos.add(candidato);
     }
 
     public Candidato candidatoJovem(){
@@ -122,4 +131,5 @@ public class Campanha {
         return "Candidatos da campanha: " +
                 candidatos.toString();
     }
+
 }
