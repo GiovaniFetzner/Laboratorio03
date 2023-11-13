@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class JunitTests {
+class CampanhaJunitTests {
 
     private ArrayList<Candidato> candidatos;
 
@@ -12,7 +12,7 @@ class JunitTests {
     private Candidato candidato01;
     private Candidato candidato02;
 
-    JunitTests(){
+    CampanhaJunitTests(){
         candidatos = new ArrayList<>();
         campanha = new Campanha(candidatos);
         candidato01 = new Candidato("Ademar", PartidosPoliticos.DIREITA,50, 110);
